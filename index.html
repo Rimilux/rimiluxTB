@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Emoji Puzzle Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧩 Emoji Puzzle Game</h1>
+    <div class="score">Score: <span id="score">0</span></div>
+    
+    <div class="question-container">
+      <div class="puzzle" id="puzzle">📍🔑</div>
+      <div class="hint">इस emoji combination का मतलब क्या है?</div>
+      
+      <div class="options">
+        <button class="option-btn" onclick="checkAnswer(this, false)">घर</button>
+        <button class="option-btn" onclick="checkAnswer(this, false)">दरवाजा</button>
+        <button class="option-btn" onclick="checkAnswer(this, true)">चाबी</button>
+        <button class="option-btn" onclick="checkAnswer(this, false)">ताला</button>
+      </div>
+    </div>
+    
+    <div class="result" id="result"></div>
+    <button class="next-btn" id="nextBtn" onclick="nextQuestion()" style="display:none;">अगला सवाल</button>
+    <button class="restart-btn" onclick="restartGame()">फिर से शुरू करें</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

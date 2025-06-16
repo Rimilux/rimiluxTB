@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.score {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: inline-block;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.question-container {
+  margin-bottom: 30px;
+}
+
+.puzzle {
+  font-size: 4rem;
+  margin: 20px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  border: 3px dashed #dee2e6;
+}
+
+.hint {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.option-btn {
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+  background: #f8f9fa;
+  border-color: #6c757d;
+  transform: translateY(-2px);
+}
+
+.option-btn.correct {
+  background: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+.option-btn.wrong {
+  background: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+.result {
+  font-size: 1.3rem;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.result.correct {
+  color: #28a745;
+}
+
+.result.wrong {
+  color: #dc3545;
+}
+
+.next-btn, .restart-btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.next-btn {
+  background: #007bff;
+  color: white;
+}
+
+.next-btn:hover {
+  background: #0056b3;
+}
+
+.restart-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.restart-btn:hover {
+  background: #545b62;
+}
